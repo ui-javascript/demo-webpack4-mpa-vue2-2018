@@ -6,7 +6,7 @@ module.exports = {
     // entry: 'default/bootstrap',
     // entry: 'demo/demo',
     // entry: 'demo/spa',
-    // entry: 'demo/admin',
+    // entry: 'admin/admin',
 
     /* vue小应用 ============== */
     // entry: 'app/_all',
@@ -18,10 +18,9 @@ module.exports = {
     // entry: 'map/map',
     // entry: 'app/nreader',
     // entry: 'app/bilibili',
-    // entry: 'app/todo',
+    entry: 'app/todo',
     // entry: 'app/mmplayer',
     // entry: 'app/happyfri',
-    entry: 'veui/table',
 
     // entry: 'cmpts/model',
     // entry: 'cmpts/effects',

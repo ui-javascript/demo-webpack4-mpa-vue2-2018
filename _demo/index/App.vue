@@ -5,7 +5,7 @@
 </template>
 
 <script>
-	import DragTable from './DragTable'
+	import DragTable from './dragTable'
 	export default {
 		data() {
 			return {
@@ -60,7 +60,7 @@
 
 <style lang="less">
 	/* reset */
-	
+
 	*,
 	*:before,
 	*:after {
@@ -69,12 +69,12 @@
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
-	
+
 	html {
 		height: 100%;
 		-webkit-text-size-adjust: 100%;
 	}
-	
+
 	body,
 	ul,
 	ol,
@@ -94,62 +94,62 @@
 		margin: 0;
 		padding: 0;
 	}
-	
+
 	input,
 	select,
 	textarea {
 		outline: none;
 	}
-	
+
 	textarea {
 		resize: none;
 		font-family: "microsoft yahei";
 	}
-	
+
 	ul,
 	ol {
 		list-style: none;
 	}
-	
+
 	i,
 	em {
 		font-style: normal;
 	}
-	
+
 	a {
 		text-decoration: none;
 		color: #459ae9;
 		cursor: pointer;
 	}
-	
+
 	a:active,
 	a:visited,
 	a:focus {
 		outline: none;
 	}
-	
+
 	// a:hover { text-decoration: underline;}
 	img {
 		border: none;
 		display: block;
 	}
-	
+
 	table {
 		border-spacing: 0;
 		table-layout: fixed;
 	}
-	
+
 	body {
 		height: 100%;
 		position: relative;
 		font: 14px/1.5 "PingFangSC-Regular", "microsoft yahei", BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 		word-wrap: break-word;
 	}
-	
+
 	input::-ms-clear {
 		display: none;
 	}
-	
+
 	input::-ms-reveal {
 		display: none;
 	}

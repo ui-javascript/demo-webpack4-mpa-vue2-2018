@@ -7,7 +7,7 @@
 module.exports = {
   system: {
     supportIE8: false,
-    pages: '_demo',
+    pages: '_admin',
     modules: 'admin',
     resolveAlias: {},
     externals: {
@@ -17,8 +17,8 @@ module.exports = {
     env: {
       NODE_ENV: '"production"',
       // BASE_API: '"https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin"',
-      BASE_API: '"https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin"'
-      // BASE_API: '"https://api-dev"',
+      // BASE_API: '"https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin"'
+      BASE_API: '"https://api-dev"',
     }
   },
   dev: {
@@ -26,7 +26,8 @@ module.exports = {
     env: {
       NODE_ENV: '"development"',
       // BASE_API: '"https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin"',
-      BASE_API: '"https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin"'
+      // BASE_API: '"https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin"',
+      BASE_API: '"www.easy-mock.com/mock/592501a391470c0ac1fab128"',
       // BASE_API: '"https://api-prod"',
     }
   }

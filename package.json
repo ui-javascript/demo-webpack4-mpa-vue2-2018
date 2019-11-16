@@ -1,10 +1,10 @@
 {
   "name": "webpack4",
   "version": "1.0.0",
-  "description": "webpack4-clo",
+  "description": "webpack4-cli",
   "main": "index.js",
   "scripts": {
-    "install": "npm install",
+    "install:yarn": "yarn install",
     "remove": "rimraf node_modules",
     "dev": "cross-env NODE_ENV=development webpack-dev-server  --hot --inline  --watch --host  0.0.0.0 --config build/webpack.config.dev.js --mode development",
     "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.prod.js --mode production"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": ""
   },
-  "author": "libin",
+  "author": "luo0412",
   "license": "MIT",
   "dependencies": {
     "@tweenjs/tween.js": "^17.2.0",
@@ -130,7 +130,7 @@
     "postcss-import": "^12.0.1",
     "postcss-loader": "^2.1.5",
     "postcss-url": "^8.0.0",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^8.0.0",
     "semver": "^5.6.0",
     "shelljs": "^0.8.2",
     "style-ext-html-webpack-plugin": "^3.4.7",
