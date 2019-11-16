@@ -1,38 +1,31 @@
 # README
 
-> 随缘运行, 人品不好的时候就跑不动
+webpack4-vue多页面模板
 
-- 配置文件没配好, 现在只作学习用...
-- 复杂的项目约定大于配置？？
+但配置文件写的不理想, 目前仅学习用...
 
+# 使用
 
-# 安装运行
+- nodejs版本可能影响安装(随缘...)
 
-- 使用npm install!! -> 安装结束会报错,但并无影响
-- 全局安装一波
+```
+npm install -g node-gyp ??
 
-```shell
-cnpm install -g node-gyp
+先尝试使用npm安装!! -> 安装结束可能会报错, 但不影响运行结果
 ```
 
-# 常见问题
+- 覆盖配置, 需要在config/system 下新建同名配置文件
 
-- 分工程跑不起来，八成是路由的问题...
+# FAQ
+
 - html里引用static内容注意相对路径 ../../static
-- main.js 引用css报错 -> 引用less/sass
-
-
-# element-admin
-
-- 样式错乱 -> node v.10.13.0 + yarn
-
-# neteasecloud 
-
-- router require().default https://www.cnblogs.com/legendjslc/p/9041804.html
+- html里引用static内容注意相对路径 ../../static
+- 工程下某个模块跑起来报错 --> 可能是`路由`的问题，检查router.js
+- main.js 引用css报错 -> 改为引用less/sass, css格式忘记配置了
+- `element-admin`样式错乱 -> node v.10.13.0 + yarn
+- `neteasecloud`: router require().default https://www.cnblogs.com/legendjslc/p/9041804.html
 
 ```shell
-# muse-ui 为旧版本 
+# muse-ui 降为旧版本 --> 拷下来的项目代码很旧
 cnpm install -S muse-ui@2.1.0
 ```
-
-# map

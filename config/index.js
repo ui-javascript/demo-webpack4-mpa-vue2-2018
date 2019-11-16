@@ -3,6 +3,8 @@ const  path = require('path')
 const merge = require('webpack-merge')
 const fs = require('fs')
 
+const CONFIG = require('./config')
+
 // 处理路径
 function resolve(dir) {
     return path.join(__dirname, '..', dir)
@@ -96,42 +98,9 @@ let config = {
     }
 };
 
-// 切换指定系统
-let sysName = [
-
-    /* Vue简单示例 ============ */
-    // 'default/_all',
-    // 'default/index',
-    // 'default/bootstrap',
-    // 'demo/demo',
-    // 'demo/spa',
-    'demo/admin',
 
 
-    /* vue小应用 ============== */
-    // 'app/_all',
-    // 'app/index',
-    // 'app/notepad',
-    // 'app/calculator',
-    // 'app/neteasecloud',
-    // 'socket/chat',
-    // 'map/map',
-    // 'app/nreader',
-    // 'app/bilibili',
-    // 'app/todo',
-    // 'app/mmplayer',
-    // 'app/happyfri',
-    // 'veui/table',
-
-    // 'cmpts/model',
-    // 'cmpts/effects',
-    // 'cmpts/toolbox',
-    // 'cmpts/layout',
-
-    // 'd3/basics',
-][0]
-
-sysName = sysName || 'default/index'
+sysName = CONFIG.entry || 'default/index'
 
 // 如果存在配置文件就覆盖
 if (fs.existsSync(`./config/system/${sysName}.js`)) {
