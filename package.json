@@ -41,7 +41,7 @@
     "markdown-it": "^8.4.2",
     "markdown-it-container": "^2.0.0",
     "mint-ui": "^2.2.13",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "muse-ui": "^2.1.0",
     "normalize.css": "^8.0.0",
     "nprogress": "^0.2.0",
